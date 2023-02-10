@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --wining: #f2c14e ;}  
+
+body{
+    color: cadetblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1{
+    font-size: 54px;
+
+}
+.container{
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: cyan;
+
+}
+#gamebord{
+width: 450px;
+display: flex;
+flex-wrap: wrap;
+margin-top: 40px;
+}
+.box{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: deeppink;
+    border-right:2px solid ;
+    border-bottom:2px solid ;
+    font-size: 150px;
+    font-weight: 700;
+}
+ .box:nth-child(3n){
+    border-right: none;
+}
+.box:nth-child(6)~.box{
+    border-bottom: none; 
+    /*  تا  6  بشمار از 6  بهبعد را بردر را بردا  */
+ } 
+button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: dimgrey;
+    color:white;
+    border-color: deeppink;
+    font-size: 10px;
+    transition: 200ms ;
+
+}
+button:hover{
+    cursor: pointer;
+    transform: translateY(-2px);
+}
